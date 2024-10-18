@@ -57,6 +57,8 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
+    // Handles uppercase vowels
+    char = char.toLowerCase();
     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
         return true;
     }
@@ -67,8 +69,11 @@ function isCharAVowel(char) {
 
 console.log('Exercise 3 Result expect true:', isCharAVowel('a'));
 console.log('Exercise 3 Result expect false:', isCharAVowel('b'));
-console.log('Exercise 3 Result expect true:', isCharAVowel('c'));
-console.log('Exercise 3 Result expect false:', isCharAVowel('e'));
+console.log('Exercise 3 Result expect false:', isCharAVowel('c'));
+console.log('Exercise 3 Result expect true:', isCharAVowel('e'));
+console.log('Exercise 3 Result expect false:', isCharAVowel('F'));
+console.log('Exercise 3 Result expect true:', isCharAVowel('I'));
+
 
 /*
 Exercise 4: generateEmail()
